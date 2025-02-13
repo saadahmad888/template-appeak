@@ -1,0 +1,1502 @@
+/* --------------------------
+:: Template Name: Ozient - App Landing Page 
+:: Template Author: CodeGlamour
+:: Template Author URI: https://www.codeglamour.com/
+:: Description: Ozient is a One Page App Landing Template. It's very clean, creative & beautiful. It's super responsive & ultra light.
+:: Version: v1.0
+:: Created: 04/15/2018  MM/DD/YYYY
+-------------------------- */
+
+/*------------------------------------------------------------------------------------
+
+[Table of contents]
+
+01.Base CSS
+02.Main Header CSS
+03.Main Banner CSS
+04.How it works CSS
+05.Advance Features CSS
+06.Why is the best & About Special Section
+07.Fact CSS
+08.Pricing Plane CSS
+09.Video Section CSS
+10.Our Blog CSS
+11.Clients Testimonial CSS
+12.App ScreenShorts
+13.Newsletter CSS
+14.Contact Us CSS
+16.Responsive CSS
+17.Proloader CSS
+
+--------------------------------------------------------------------------------------*/
+
+/* -----------------------------------
+:: 1. Base CSS Start
+------------------------------------ */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Ubuntu', sans-serif;
+    background-color: #fff;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+	font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    margin-top:0;
+    line-height: 1;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 0;
+    color:#636d75;
+
+}
+a{
+	color: #726a84;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+a:hover, a:active, a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+ul > li{
+	color: #726a84;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+/* ------ Helper Classes -------------- */
+
+.bold{
+    font-weight: 600;
+}
+
+.mobile-device {
+    background: #fff;
+    border: 1px solid #edf4f8;
+    margin: 0 auto;
+    position: relative;
+    max-width: 255px;
+    border-radius: 36px;
+    padding: 55px 0;
+    -webkit-box-shadow: inset 0 4px 10px 1px #fff, inset 0 0 6px 0 rgba(66,77,86,.5), 0 2px 0 #aeb5bb, 0 20px 50px -25px rgba(0,0,0,.5);
+    box-shadow: inset 0 4px 10px 1px #fff, inset 0 0 6px 0 rgba(66,77,86,.5), 0 2px 0 #aeb5bb, 0 20px 50px -25px rgba(0,0,0,.5);
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-150 {
+    margin-top: 150px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.mr-100 {
+    margin-right: 100px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.ml-100 {
+    margin-left: 100px;
+}
+
+
+
+
+.pt-15 {
+    padding-top: 15px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pt-150 {
+    padding-top: 150px;
+}
+
+.pr-15 {
+    padding-right: 15px;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+
+.pr-50 {
+    padding-right: 50px;
+}
+
+.pr-100 {
+    padding-right: 100px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.pb-15 {
+    padding-bottom: 15px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.pl-15 {
+    padding-left: 15px;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+
+.pl-50 {
+    padding-left: 50px;
+}
+
+.pl-100 {
+    padding-left: 100px;
+}
+
+
+section{
+	padding: 70px 0;
+}
+
+.section-heading{
+    margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.section-heading > h2 {
+    font-weight: 300;
+    color: #170B35;
+    font-size: 40px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.section-heading > p {
+    font-weight: 300;
+    color: #636d75;
+    margin: 0;
+}
+
+.line-title-white,
+.line-title-center,
+.line-title-left {
+    width: 80px;
+    height: 2px;
+    background-color: #6541c1;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.line-title-center {
+    margin-left: calc(50% - 40px);
+}
+.line-title-left {
+    margin-left: 5px;
+}
+
+
+.btn{
+	height: 50px;
+    min-width: 167px;
+    text-align: center;
+    border-radius: 25px 25px 25px 25px;
+    background-color: #fff;
+    color: #636d75;
+    border-color: #d43396;
+    padding-bottom: 4px;
+    
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #d43396 0%, #6541c1 98%, #6541c1 100%);
+    color: #fff;
+    border-color: #fff;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.img-padding-tb{
+    padding: 30px 0 30px;
+}
+
+h3,
+h4,
+h5,
+h6{
+    color: #150A33;
+}
+
+/* --------------------------
+:: 2. Header Area CSS
+-------------------------- */
+
+.main-header {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    padding: 0 4%;
+}
+.navbar{
+	padding: 1.5rem 1rem;
+}
+
+.top_menu .navbar-brand {
+    font-size: 35px;
+    font-weight: 700;
+    color: #2a1169;
+    margin: 0;
+    line-height: 1;
+    padding: 0;
+}
+
+.top_menu .navbar-brand:hover,
+.top_menu .navbar-brand:focus {
+    color: #fff;
+}
+
+.top_menu .navbar-brand .logo{
+    margin-top: -12px;
+}
+
+.top_menu .navbar-brand .logo-sticky{
+    height: 60px;
+    margin-top: -12px;
+}
+
+.top_menu{
+    position: relative;
+    z-index: 2;
+}
+
+.top_menu #nav .nav-link {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    padding: 10px 15px;
+}
+
+.top_menu #nav .nav-link:hover {
+    background-color: #6541c1;
+    color: #fff;
+}
+
+
+
+/* stcicky css */
+.main-header.sticky {
+    background-color: #333368;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    height: 93px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.main-header.sticky button {
+    background-color: #fff;
+}
+
+.main-header.sticky .top_menu .navbar-brand {
+    color: #fff;
+}
+
+.main-header.sticky .top_menu #nav .nav-link {
+    color: #fff;
+}
+
+
+
+/* --------------------------
+:: 3. Main Banner Area CSS
+-------------------------- */
+.main_banner_area{
+    padding: 150px 0 100px;
+    background-image: url(http://via.placeholder.com/1920x500);
+    min-height: 680px;
+    position: relative;
+    z-index: 1;
+    background-position: bottom center;
+    background-size: cover;
+}
+.main_banner_area:after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+    background-image: -moz-linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    background-image: -webkit-linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    background-image: -ms-linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    background-image: linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    opacity: 1;
+}
+
+.main_banner_area .info{
+    padding: 50px 0;
+}
+
+.particle_main_banner_area{
+    padding: 150px 0 100px;
+    background-image: url(http://via.placeholder.com/1920x500);
+    min-height: 680px;
+    position: relative;
+    z-index: 1;
+    background-position: bottom center;
+    background-size: cover;
+}
+.particle_main_banner_area:after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: -moz-linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    background-image: -webkit-linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    background-image: -ms-linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    background-image: linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    opacity: 1;
+}
+
+.particle_main_banner_area .info{
+    padding: 50px 0;
+}
+
+
+.move_main_banner_area{
+    padding: 150px 0 100px;
+    background-image: url(http://via.placeholder.com/1920x500);
+    min-height: 680px;
+    position: relative;
+    z-index: 1;
+    background-position: bottom center;
+    background-size: cover;   
+}
+
+.move_main_banner_area:after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: -moz-linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    background-image: -webkit-linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    background-image: -ms-linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    background-image: linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    opacity: 1;
+}
+
+.move_main_banner_area .info{
+    padding: 50px 0;
+}
+
+.info > p{
+    color: #f1f2f3;
+}
+
+
+.main_banner_area .info .btn,
+.particle_main_banner_area .info .btn,
+.move_main_banner_area .info .btn {
+	height: 50px;
+    min-width: 167px;
+    text-align: center;
+    border-radius: 25px 25px 25px 25px;
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    padding-bottom: 4px;
+    
+}
+
+.main_banner_area .info .btn:hover,
+.particle_main_banner_area .info .btn:hover,
+.move_main_banner_area .info .btn:hover {
+    background: #d43396;
+    color: #fff;
+    border-color: #d43396;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+/* --------------------------
+:: 4. How it works Area CSS
+-------------------------- */
+.how-it-single {
+    padding: 20px;
+}
+
+.how-it-single:hover {
+    -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3 ease;
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+    
+           
+}
+
+.single-icon > i {
+    font-size: 65px;
+    color: #6541c1;
+}
+
+.how-it-single p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.how-it-single p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.how-it-single .single-detail > h4 {
+    font-size: 22px;
+   
+}
+
+.how-it-single .single-detail {
+    margin-left: 35px;
+}
+
+
+/* --------------------------
+:: 5. Feature Area CSS
+-------------------------- */
+
+.feature-single {
+    padding: 17px 0 0 15px;
+    margin-bottom: 63px;
+    
+}
+
+.feature-single:hover {
+    -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3 ease;
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+    
+           
+}
+
+.feature-icon > i {
+    font-size: 65px;
+    color: #6541c1;
+}
+
+.feature-single p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.feature-single p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.feature-single .feature-detail > h4 {
+    font-size: 18px;
+       
+}
+
+.feature-single .feature-detail {
+    margin-left: 35px;
+}
+
+
+
+/* --------------------------
+:: 6. Why is the best & Special Area CSS
+-------------------------- */
+
+.app-download-area {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 1;
+    flex-basis: 1;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.app-download-btn a {
+    border: 1px solid #ddd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 30px 30px 30px 0;
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.app-download-btn.active a,
+.app-download-btn a:hover {
+    border-color: transparent;
+    background-color: #d43396;
+}
+
+.app-download-btn a i {
+    color: #47425d;
+    font-size: 24px;
+    margin-right: 15px;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.app-download-btn a p {
+    font-size: 16px;
+    line-height: 1;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.app-download-btn a p span {
+    font-size: 12px;
+    display: block;
+}
+
+.app-download-btn:first-child {
+    margin-right: 20px;
+}
+
+.app-download-btn a:hover i,
+.app-download-btn.active a i,
+.app-download-btn.active a p,
+.app-download-btn a:hover p {
+    color: #fff;
+}
+
+
+/* --------------------------
+:: 7. Facts Area CSS
+-------------------------- */
+
+.facts_area {
+    z-index: auto;
+    background-image:linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+}
+.single-fact{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.facts-content > i {
+    color: #ffffff;
+    font-size: 36px;
+    padding: 15px; 
+
+}
+
+.counter-area h4{
+    color: #ffffff;
+    font-size: 60px;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.facts-content > p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+
+/* --------------------------
+:: 8. Pricing Plan Area CSS
+-------------------------- */
+
+.pricing-plane-area {
+    background: #f5f9fc;
+}
+
+.plan-item {
+    background: #ffffff;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+
+.plan-item .package-price h4{ 
+    font-family:inherit;   
+    background: -webkit-gradient(linear, left top, right top, from(#6541c1), color-stop(98%, #d43396), to(#d43396));
+    background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 53px;
+    font-weight: 200;
+    line-height: 1em;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.plan-item .package-description .fa-times {
+    color: rgb(109, 106, 108);
+
+}
+
+.plan-item .package-description .fa-check {
+    color: #6541c1;
+
+}
+
+.plan-item .plan-button > a {
+    background: #636d75;
+    padding: 10px 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.plan-item .package-description > p {
+    margin-bottom: 0;
+    line-height: 1;
+    padding: 20px 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.plan-item .package-description > p:first-child {
+    border-top: 1px solid #ebebeb;
+    padding: 20px 20px;
+    font-weight: 700;
+}
+
+.plan-item:hover .plan-button > a {
+    background-color: white;
+    color: #636d75;
+}
+
+.pricing-detail{
+    background-image:linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    color: white;
+    padding : 10px 30px 1px;
+    border-radius: 40px;
+}
+
+.pricing-detail > h5{
+    font-size: 30px;
+    font-family: inherit;   
+    color: #fff;
+
+}
+
+
+
+/* --------------------------
+:: 9 FAQ Area CSS
+-------------------------- */
+
+#faq .card-header{
+    background-color: white;
+}
+
+#faq .card{
+    margin-bottom: 30px;
+    border-width: 0 0 0 3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #6541c1, rgba(110, 191, 210, 0.8)) 1 100%;
+}
+
+
+
+/* --------------------------
+:: 10 Video Area CSS
+-------------------------- */
+
+.video-section .video-area {
+    
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+    background-position: center center;
+    background-size: cover;
+    height: 450px;
+    background-attachment: fixed;
+    -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
+
+}
+
+.video-section .video-area:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(61, 30, 130, 0.67);
+}
+
+.video-section .video-play-btn {
+    position: relative;
+}
+
+.video-section .video-play-btn {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.video-section h3 {
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.video-section a.video_btn i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 84px;
+    height: 84px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 84px;
+    border-radius: 50%;
+    background: #D9378B;
+}
+
+.video-section a.video_btn {
+    width: 109px;
+    height: 109px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    display: inline-block;
+    line-height: 109px;
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+
+/* --------------------------
+:: 11. Blog Area CSS
+-------------------------- */
+.our_blog_aera{
+	background: #f5f5f5;
+}
+
+.blog-item{
+    background: #fff;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.blog-item .figure-caption{
+	padding: 15px 22px;
+}
+.blog-item  h5{
+	font-size: 22px;
+
+}
+
+
+
+
+/* --------------------------
+:: 12 App Screenshots Area CSS
+-------------------------- */
+
+.app_screenshots_slides {
+    
+    margin-bottom: 30px;
+}
+
+.app_screenshots_slides .single-shot {
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85)
+}
+
+.app_screenshots_slides .center .single-shot {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+.app-screenshots-area .owl-dot {
+    height: 11px;
+    width: 11px;
+    border: 3px solid #d43396;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 6px;
+    margin-top: 50px;
+}
+
+.app-screenshots-area .owl-dot.active {
+    background-color: #d43396;
+    border: transparent;
+}
+
+.app-screenshots-area .owl-dots {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* --------------------------
+:: 12 Testimonials Area CSS
+-------------------------- */
+.clients_testimonial_area .client-name > h5 {
+    color: #6541c1;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.clients_testimonial_area .star-icon > i {
+    font-size: 18px;
+    color: #f1b922;
+}
+
+.clients_testimonial_area .client-description > p {
+    max-width: 1010px;
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.clients_testimonial_area .client > i {
+    font-size: 48px;
+    color: #6541c1;
+    margin-bottom: 30px;
+}
+
+.clients_testimonial_area .client-name > p {
+    color: #d43396;
+}
+
+.clients_testimonial_area ul>li{
+    color: #f8f9fa;
+}
+
+.clients_testimonial_area .slick-dots {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.clients_testimonial_area .slick-dots li button {
+    width: 12px;
+    height: 12px;
+    text-indent: -999999999999999999999999px;
+    border: 2px solid #a49fba;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 5.5px;
+    outline: none;
+}
+
+.clients_testimonial_area .slick-dots li.slick-active button {
+    border-color: #d43396;
+}
+
+.clients_testimonial_area .slick-slide.client-thumbnail {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 129px;
+}
+
+
+.clients_testimonial_area .slick-slide img {
+    display: block;
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.clients_testimonial_area .slick-slide.slick-current img {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.clients_testimonial_area .slick-arrow {
+    position: absolute;
+    width: 30px;
+    background-color: #f8f9fa;
+    height: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #7f62bd;
+    display: block;
+    line-height: 550%;
+    left: 0;
+    z-index: 90;
+    cursor: pointer;
+}
+
+.clients_testimonial_area .slick-arrow.fa-angle-right {
+    left: auto;
+    right: 0;
+    top: 0;
+}
+
+
+/* --------------------------
+:: 13. contact-us Area CSS
+-------------------------- */
+
+#contact-us{
+    padding: 100px 0 100px;
+}
+
+.contact-form .form-control{
+    border-radius: 25px 25px 25px 25px;
+    padding: 10px;
+}
+
+.contact-form{
+    padding: 50px;
+    background-color: #6541c1;
+    color: white;
+}
+
+.contact-detail{
+    background-image: linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    color: white;
+    padding: 50px;
+    height: 100%;
+}
+
+.contact-detail > p{
+    color: white;
+}
+
+.contact-icons li{
+    margin-top: 20px;
+}
+
+.contact-icons li >a{
+    color: white;
+}
+
+/* --------------------------
+:: 14. Newsletter Area CSS
+-------------------------- */
+
+.newsletter{
+	margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.newsletter .form-control{
+	font-size: 18px;
+    padding: 15px 15px;
+    border-radius: 25px !important;
+}
+.newsletter span{
+	position: absolute;
+    right: 1%;
+    top: 9%;
+    z-index: 98;
+}
+
+.newsletter_area .section-heading h2{
+    color: #fff;
+}
+
+.newsletter_area .section-heading .line-title-center{
+    background-color: #fff;
+}
+
+.newsletter button{
+    border-color: #6541c1;
+    font-weight: 500;
+    color: #6541c1;
+}
+
+
+
+/* --------------------------
+:: 15. Footer Area CSS
+-------------------------- */
+
+footer{
+    background: #333368;
+    padding: 0px 0 70px;
+}
+
+.social-icons{
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.social-icons li a{
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 100px;
+    color: #70798f;
+    display: inline-block;
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+}
+
+.social-icons li a:hover{
+    background-image: linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    color: white;
+}
+
+.copy-right{
+    color: #c0cbd4;
+}
+
+.copy-right a{
+    color: white;
+}
+
+
+/* --------------------------
+:: 15. Responsive CSS
+-------------------------- */
+
+    
+@media (min-width: 992px) and (max-width: 1199px) {
+	.top_menu .navbar-brand {
+        font-size: 42px;
+    }
+    .top_menu #nav .nav-link {
+        padding-right: 7.5px;
+    }
+
+    .newsletter .right-content button {
+        margin-top: 10px;
+         
+     }
+    
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+    
+    .top_menu #nav{
+        margin-top: 5px;
+    }
+    
+    .top_menu #nav .nav-link{
+        background: #d43396f5;
+        border-radius: 0px;
+    }
+    .main-header.sticky .top_menu #nav .nav-link {
+    color: #fff;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .top_menu .navbar-brand {
+        font-size: 42px;
+    }
+    .top_menu #nav .nav-link {
+        padding-right: 7.5px;
+    }
+    .newsletter .right-content button {
+        margin-top: 10px;
+         
+     }
+}
+
+
+@media (min-width: 320px) and (max-width: 760px) {
+	.home-content .submit{
+		margin-left: 30px;
+	}
+    .feature-single{
+        margin-bottom: 0;
+    }
+    .feature-img {
+            margin-top: 30px;
+     }
+
+     .newsletter .right-content button {
+        padding: 5px 19px;
+        font-size: 14px;
+        float: none;
+        text-align: center;
+     }
+
+
+} 
+
+@media (min-width: 300px) and (max-width: 520px) {
+    
+    .main-header {
+        padding: 0;
+    }
+    .navbar{
+        padding: 1.5rem 0rem;
+    }
+    .navbar-toggler {
+        margin: 0px 10px;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    .section-heading > h2{
+        font-size: 30px;
+    }
+    .app-download-area{
+        display: inline-block;
+    }
+    .app-download-btn a{
+        margin-bottom: 10px;
+    }
+    .pricing-detail > h5 {
+        font-size: 28px;
+    }
+
+    .newsletter .right-content button {
+        padding: 5px 19px;
+        font-size: 14px;
+        float: none;
+        text-align: center;
+    }
+
+    .app-download-btn a i {
+        font-size: 24px;
+ 
+    }
+    
+    .app-download-btn a p {
+        font-size: 16px;
+    }
+
+}
+
+/* --------------------------
+:: Scroll to top CSS
+-------------------------- */
+
+.scroll-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #6541c1;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #6541c1), color-stop(98%, #d43396), color-stop(100%, #d43396));
+    background: -webkit-gradient(linear, left top, right top, from(#6541c1), color-stop(98%, #d43396), to(#d43396));
+    background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6541c1', endColorstr='#d43396', GradientType=1);
+    color: #fff;
+    font-size: 17px;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    -webkit-box-shadow: 0px 23px 42px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 23px 42px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+
+/* --------------------------
+:: 17. Preloader CSS
+-------------------------- */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    background-image: -moz-linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    background-image: -webkit-linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    background-image: -ms-linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+    background-image: linear-gradient(90deg, #6541c1 0%, #d43396 100%);
+}
+.ozient-folding-cube {
+  top: 41%;  
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.ozient-folding-cube .ozient-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.ozient-folding-cube .ozient-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-animation: ozient-foldCubeAngle 2.4s infinite linear both;
+          animation: ozient-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.ozient-folding-cube .ozient-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.ozient-folding-cube .ozient-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.ozient-folding-cube .ozient-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.ozient-folding-cube .ozient-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.ozient-folding-cube .ozient-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.ozient-folding-cube .ozient-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes ozient-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes ozient-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
